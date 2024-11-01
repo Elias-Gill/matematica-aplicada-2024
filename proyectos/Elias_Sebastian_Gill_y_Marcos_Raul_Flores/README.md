@@ -1,25 +1,24 @@
 # Requerimientos
 
-Para correr el proyecto se debe instalar el dataset desde
-[aqui](https://www.kaggle.com/datasets/krishbaisoya/tweets-sentiment-analysis).
-
-Luego ponerlo en una carpeta que se llame "dataset" (modificar la linea de codigo que hacer
-referencia al dataset de ser necesario).
-
-Luego instale las dependencias necesarias utilizando `pip`:
+Primeramente instale las dependencias necesarias utilizando `pip`:
 ```bash
 pip install -r requirements.txt
 ```
 
-Ahora ya puede correr el programa:
+Seguidamente corra el programa:
 
 ```bash
 python main.py
 ```
 
-El programa generara un archivo output.csv, el cual contiene el siguiente formato para cada
+El programa generara un archivo llamado `output.csv`, el cual contiene el siguiente formato para cada
 linea:
 
 ```txt
 "tweet, sentimiento, negativa, neutral, positiva, defuzz, sent_defuzz, t_fuzz, t_defuzz, t_total"
 ```
+
+Ademas se imprimiran algunas metricas relacionadas al tiempo de ejecucion y a la presicion del analisis de sentimiento.
+
+El proyecto ya cuenta con datos de test en el archivo test_data.cvs, aun asi puede descargar el dataset utilizado desde
+[aqui](https://www.kaggle.com/datasets/krishbaisoya/tweets-sentiment-analysis).
