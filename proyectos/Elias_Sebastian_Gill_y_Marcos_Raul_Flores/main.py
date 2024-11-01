@@ -42,7 +42,7 @@ nltk.download("vader_lexicon")
 inicio_tiempo = time.time()
 
 # Cargar conjunto de datos de entrenamiento
-conjunto_entrenamiento = pd.read_csv("./dataset/test_data.csv", encoding="ISO-8859-1")
+conjunto_entrenamiento = pd.read_csv("./test_data.csv", encoding="ISO-8859-1")
 
 # Extraer texto de los tweets y etiquetas de sentimiento
 textos_tweets = conjunto_entrenamiento.sentence
